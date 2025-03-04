@@ -1,0 +1,8 @@
+背景知识：vscode上用java本身就几步：装java插件，添加java环境变量
+java运行前会先编译成class文件，储存在Lib目录或者直接在根目录下面
+编译成功与否自己去看目录下有没有class文件
+
+问题：cannot find main class 有几个原因
+原因1：拼写错误导致要找的文件不在根目录下
+原因2：没有将jar(聚合文件）添加到libraries中去（configure classpath）
+原因3：!!!IDE上保存的JAVA文件不一定与本地同步！！！如果以上两个都没错，仔细检查是不是本地的文件内存还为0...【debug半天发现根本没存在本地因此编译失败】
